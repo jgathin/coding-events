@@ -8,6 +8,7 @@
 
 <h2>List of Events!</h2>
 
+<p th:unless = "${events} and ${events.size()}">No Events have been added!</p>
     <ul>
         <th:block th:each="event : ${events}">
             <li th:text="${event}"></li>
